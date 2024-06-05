@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.androidLibrary)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    //alias(libs.plugins.androidPublish)
+    id("maven-publish")
 }
 
 android {
@@ -29,6 +31,24 @@ android {
     }
     kotlinOptions {
         jvmTarget = "18"
+    }
+
+    afterEvaluate {
+
+        publishing {
+
+            publications {
+                create<MavenPublication>("release") {
+                    from(components["release"])
+                    groupId = "com.github.AlbertoMarinFa"
+                    artifactId = "SumNumbers"
+                    version = "0.0.1"
+                }
+                repositories {
+                    mavenLocal()
+                }
+            }
+        }
     }
 }
 
