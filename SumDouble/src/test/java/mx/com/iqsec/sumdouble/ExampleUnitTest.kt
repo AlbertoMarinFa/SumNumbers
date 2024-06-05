@@ -1,4 +1,4 @@
-package mx.com.iqsec.sum_int_numers
+package mx.com.iqsec.sumdouble
 
 import org.junit.Test
 

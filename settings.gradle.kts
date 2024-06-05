@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "sumNumbers"
 include(":app")
-include(":app:sum-int-numers")
+//include(":app:sum-int-numers")
+include(":SumDouble")

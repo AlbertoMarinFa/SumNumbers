@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "mx.com.iqsec.sum_int_numers"
+    namespace = "mx.com.iqsec.sumdouble"
     compileSdk = 34
 
     defaultConfig {
