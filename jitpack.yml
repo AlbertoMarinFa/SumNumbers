@@ -2,8 +2,8 @@
 jdk:
   - openjdk19
 before_install:
-  - sdk install java 19.0.2
-  - sdk use java 19.0.2
+  - sdk install java 19.0.1
+  - sdk use java 19.0.1
   - ./scripts/prepareJitpackEnvironment.sh
   - sdk install maven
   - mvn -v
